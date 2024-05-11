@@ -121,17 +121,6 @@ $total_atd = sumofattemdance($total_a, $tables);
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <?php
-    // Progress value (between 0 and 1, where 1 represents 100% progress)
-    $progress = 0.9; // 20% progress
-
-    // Calculate the circumference of the circle
-    $radius = 36;
-    $circumference = 2 * M_PI * $radius;
-
-    // Calculate the dash array values for the progress
-    $dasharrayValue = $progress * $circumference . " " . (1 - $progress) * $circumference;
-    ?>
     <header>
         <div class="logo">
             <img src="./rec/logo.png" alt="">
