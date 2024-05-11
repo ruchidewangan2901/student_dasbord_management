@@ -38,9 +38,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if ($showError==false) {
         $message = "password reset successfull";
         echo "<script>alert('$message');</script>";
-        // 
     }
-    // header("location: home.php");
 }
 
 ?>
@@ -61,8 +59,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <style>
         body{
             background-image: url("./rec/bg-1.jpg");
-            /* background-repeat: no-repeat;
-            background-size: cover; */
         }
         header{position: relative;}
         .change-password-container{
@@ -80,7 +76,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             justify-content: center;
             border-radius: var(--border-radius-2);
             padding : 3.5rem;
-            /* background-color: var(--color-white); */
             background-color: rgb(89, 98, 222, 0.2);
             box-shadow: var(--box-shadow);
             width: 95%;
@@ -110,7 +105,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             border: 2px solid var(--color-primary) !important;
             border-radius: var(--border-radius-1);
             padding: .5rem 1rem;
-            /* color: var(--color-white); */
             color: black;
             background-color: var(--color-primary);
             cursor: pointer;
@@ -169,12 +163,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="box">
                 <p class="text-muted" style="color: black;">New Password</p>
-                <!-- <input type="password" id="newpass"> -->
                 <input type="password" class="form-control" id="newpass" name="password" style="color: black;background-color: #eae5e9da;>
             </div>
             <div class="box">
                 <p class="text-muted" style="color: black;">Confirm Password</p>
-                <!-- <input type="password" id="confirmpass"> -->
                 <input type="password" class="form-control" id="confirmpass" name="cpassword" style="color: black;background-color: #eae5e9da;>
             </div>
             <div class="button">
